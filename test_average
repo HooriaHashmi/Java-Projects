@@ -1,0 +1,28 @@
+import java.util.Scanner; 
+
+public class TestAverage {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first test score: ");
+        double score1 = scanner.nextDouble();
+
+        System.out.print("Enter second test score: ");
+        double score2 = scanner.nextDouble();
+
+        System.out.print("Enter third test score: ");
+        double score3 = scanner.nextDouble();
+
+
+        double average = (score1 + score2 + score3) / 3;
+
+        System.out.println("\nTest Scores:");
+        System.out.println("Score 1: " + score1);
+        System.out.println("Score 2: " + score2);
+        System.out.println("Score 3: " + score3);
+        System.out.printf("Average Score: %.2f%n", average);
+
+        
+        scanner.close();
+    }
+}
