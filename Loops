@@ -1,0 +1,52 @@
+import javax.swing.JOptionPane;
+import java.util.Scanner;
+
+public class Loops {
+    public static void main(String[] args){
+
+
+        System.out.println("Where do you want your output: ");
+        System.out.println(" 1. Console");
+        System.out.println(" 2. JOption ");
+        System.out.print("\nChoice: ");
+
+        int choice;
+
+        Scanner input = new Scanner(System.in);
+
+        choice = input.nextInt();
+
+        if(choice == 1){
+            int age;
+            System.out.println("Enter your age: ");
+            age = input.nextInt();
+
+            if( age >= 18){
+                System.out.println("You are eligible to vote!");
+            }else{
+                System.out.println("Sorry! You are not eligible to vote!");
+            }
+
+
+        }else if(choice == 2){
+            int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age: "));
+
+            switch(age){
+                case 100:
+                case 18:
+                    JOptionPane.showMessageDialog(null, "You are eligible to vote!");
+                break;
+
+                case 17:
+                case 0:
+                    JOptionPane.showMessageDialog(null, "You are eligible to vote!");
+                break;
+
+                default:
+                    JOptionPane.showMessageDialog(null, "Positive Numbers and less than 200");
+
+
+            }
+        }
+    }
+}
