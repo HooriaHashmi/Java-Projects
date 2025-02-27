@@ -1,0 +1,24 @@
+public class StockCommission {
+    public static void main(String[] args) {
+       
+        int shares_bought = 600;
+        double price_of_one_share = 21.77;
+        double commission_rate = 0.02; 
+
+        // Calculate the amount paid for the stock (without commission)
+        double stockCost = shares_bought * price_of_one_share;
+
+        // Calculate the commission amount
+        double commission_amount = stockCost * commission_rate;
+
+        // Calculate the total amount paid (stock cost + commission)
+        double total_amount = stockCost + commission_amount;
+
+        // Display the results
+        System.out.printf("Amount paid for the stock : $%.2f%n", stockCost);
+        System.out.printf("Commission amount: $%.2f%n", commission_amount);
+        System.out.printf("Total amount paid: $%.2f%n", total_amount);
+    }
+}
+
+
