@@ -1,0 +1,17 @@
+import java.util.Scanner;
+ public class FavoriteCity{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Enter your favorite city:");
+        
+        String city = scanner.nextLine();
+         int len = city.length();
+
+        System.out.println("Enter your favorite city:" + len );
+
+        System.out.println("Enter your favorite city:" + city.toLowerCase());
+        System.out.println("Enter your favorite city:"+ city.toUpperCase());
+        System.out.println("Your favorite city is: " + city.charAt(0));
+    }
+ }
