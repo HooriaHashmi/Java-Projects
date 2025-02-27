@@ -1,0 +1,23 @@
+import javax.swing.JOptionPane;
+
+public class Personal_Information {
+    public static void main(String[] args) {
+        System.out.println("You can call me Hashmi, cause that is my name.");
+        System.out.println("I am 20 years old.");
+        System.out.println("I am a whopping 175.5 cm tall.");
+        System.out.println("It is true if you say I love programming but I have a whole lot of other interests.");
+        System.out.println("$75000.00 would not be a bad salary at all, I mean, who want anything less?");
+        System.out.println("The character for my gender is F.");
+        
+        String message = "You can call me Hashmi, cause that is my name.\n" +
+        "I am 20 years old.\n" +
+        "I am a whopping 175.5 cm tall.\n" +
+        "It is true if you say I love programming but I have a whole lot of other interests.\n" +
+        "$75000.00 would not be a bad salary at all, I mean, who want anything less?.\n" +
+        "The character for my gender is F.";
+
+JOptionPane.showMessageDialog(null, message);
+}
+}
+
+
